@@ -8,13 +8,13 @@ econFM(
   dat,
   y,
   y_metric = 1000,
+  log_base = 10,
   cpi_adjust = TRUE,
   time_var = "date",
   time_split = "none",
   time_split_cumulative = F,
   group_var = "disaster_subgroup",
   group = "",
-  log_base = 10,
   mc_method = "gft",
   mbin = 0.1
 )
@@ -25,6 +25,8 @@ econFM(
 \item{y}{character}
 
 \item{y_metric}{numeric}
+
+\item{log_base}{10 or 'natural'}
 
 \item{cpi_adjust}{logical}
 
@@ -37,8 +39,6 @@ econFM(
 \item{group_var}{character}
 
 \item{group}{character vector}
-
-\item{log_base}{10 or 'natural'}
 
 \item{mc_method}{'gft', 'mode', or 'mbass'}
 

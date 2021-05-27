@@ -2,4 +2,7 @@
 
 export("%>%")
 export(econFM)
+export(fmAdd)
+export(fmPlot)
+export(loessTM)
 importFrom(magrittr,"%>%")

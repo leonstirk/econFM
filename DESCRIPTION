@@ -18,4 +18,5 @@ Imports:
     rseismNet,
     stringr,
     dplyr,
-    magrittr
+    magrittr,
+    ggplot2

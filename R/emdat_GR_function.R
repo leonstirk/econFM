@@ -1,7 +1,3 @@
-# ##library(rvest)
-# ##library(lubridate)
-# ##library(zoo)
-#
 # dis <- read.csv('../../earthquakes/emdat_allnaturaldisasters_1900_2021.csv') %>% as_tibble()
 # names(dis) <- names(dis) %>% tolower() %>% str_replace_all('\\.','_') %>% str_replace_all('___000_us__', '')
 #
@@ -49,10 +45,6 @@
 # lapply(tmp, function(i) { unlist(lapply(i, function(x) { x[['b_cum']]$coefficients[2]}))})
 #
 #
-# ## text(x=filter(didi, mi == as.character(mc_gft))$mi, y=filter(didi, mi == as.character(mc_gft))$Ni, labels=c(expression("M"["c"])), pos=2, col="blue")
-#
-#
-#
-#
-#
-#
+# main = "All hazards Frequency-Total Damages"
+# ylab = "Cumulative disaster frequency"
+# xlab = expression("Log"[10]*"(Inflation-adjusted damages)")

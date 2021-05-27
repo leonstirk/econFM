@@ -21,7 +21,7 @@
 ##                  time_split = 'median', time_split_cumulative = F, mc_method = 'gft')
 ## output <- econFM(dis, "total_affected", cpi_adjust = F, group_var = "disaster_type",
 ##                  group = c("Flood", "Storm"), mc_method = 'mode')
-econFM <- function(dat, y, y_metric = 1000, cpi_adjust = TRUE, time_var = "date", time_split = "none", time_split_cumulative = F, group_var = "disaster_subgroup", group = "", log_base = 10, mc_method = 'gft', mbin = 0.1) {
+econFM <- function(dat, y, y_metric = 1000, log_base = 10, cpi_adjust = TRUE, time_var = "date", time_split = "none", time_split_cumulative = F, group_var = "disaster_subgroup", group = "", mc_method = 'gft', mbin = 0.1) {
   ## input y complete cases
   dat <- dat[dat[y] %>% stats::complete.cases() %>% which(),]
   ## convert to units using y_metric
